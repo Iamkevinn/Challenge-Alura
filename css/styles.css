@@ -186,6 +186,9 @@ body{
     .Principal{
         width: 100%;
     }
+    .muneco{
+        display: none;
+    }
 }
 /* Large devices (laptops/desktops, 991px and up) */
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
