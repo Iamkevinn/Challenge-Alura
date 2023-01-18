@@ -25,6 +25,8 @@ function Obtener(){
     document.querySelector("#Copiar").style.display = "block";
     document.querySelector("#mensaje1").style.display = "none";
     document.querySelector("#mensaje2").style.display = "none";
+    textArea.style.border = "1px solid rgba(0, 0, 0, 0.1)";
+    textArea.style.border = "none";
     textArea.style.display = "flex";
 }
 
