@@ -6,7 +6,7 @@ const Logica = document.querySelector(".rectangulo");
 const textArea = document.createElement("textarea");
 
 Logica.appendChild(textArea);
-textArea.style.height = "55vh";
+textArea.style.height = "46vh";
 textArea.style.width = "87%";
 textArea.style.outline = "none";
 textArea.style.resize = "none";
