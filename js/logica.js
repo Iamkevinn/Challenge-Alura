@@ -7,7 +7,7 @@ const textArea = document.createElement("textarea");
 
 Logica.appendChild(textArea);
 textArea.style.height = "55vh";
-textArea.style.width = "90%";
+textArea.style.width = "87%";
 textArea.style.outline = "none";
 textArea.style.resize = "none";
 textArea.style.color = "#0a3871";
