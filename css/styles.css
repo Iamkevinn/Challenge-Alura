@@ -195,4 +195,7 @@ body{
     .Principal{
         width: 100%;
     }
+    .muneco{
+        display: none;
+    }
 }
