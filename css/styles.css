@@ -186,6 +186,7 @@ body{
     .Principal{
         width: 100%;
     }
+    /*Desapareciendo la imagen*/
     .muneco{
         display: none;
     }
@@ -195,6 +196,7 @@ body{
     .Principal{
         width: 100%;
     }
+    /*Desapareciendo la imagen*/
     .muneco{
         display: none;
     }
