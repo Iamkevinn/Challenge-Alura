@@ -16,7 +16,7 @@ body{
     border: 1px solid rgba(102, 51, 153, 0);
     position: absolute;
     width: 82vw; 
-    left: 10vw;
+    left: 7.5vw;
     top: 8vh;
 }
 .Principal{
@@ -96,6 +96,7 @@ body{
     width: 45%;
     height: 67px;
     border-radius: 20px;
+    cursor: pointer;
 }
 .Logica{
     display: flex;
@@ -148,14 +149,68 @@ body{
     top: 72px;
     border: 1px solid rgba(0, 0, 0, 0);
 }
-#Copiar{
+#Copiar {
     display: none;
     color: #0f4281;
     background: transparent;
     border: 1px solid #0A3871; 
     width: 245px;
     position: absolute;
-    bottom: 15px;
+    bottom: 205px;
+}
+
+.Modo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 50px;
+}
+.BotonCambio{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    border-radius: 100px;
+    /*background-color: #212227;*/
+    border: 2px solid rgba(26, 26, 31, .8);
+    cursor: pointer;
+    background-color: transparent;
+}
+.IconoMoon{
+    display: none;
+    color: rgb(255, 255, 255);
+}
+.IconoSun{
+    color: rgb(255, 247, 0);
+    width: 55px;
+}
+/*Modo Oscuro*/
+.DarkMode{
+    background-color: #212227;
+    transition:background-color .5s;
+}
+.DarkMode-rectangulo{
+    background-color: #121212;
+    transition:background-color .5s;
+}
+.DarkMode-Objects{
+    color: #a6b7cb;
+    transition:background-color .5s;    
+}
+.DarkMode-Botones{
+    color: #a6b7cb;
+    transition:background-color .5s; 
+    border: 1px solid #a6b7cb;
+}
+.DarkMode-Botones2{
+    transition:background-color .5s; 
+    border: 1px solid #a6b7cb;
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){

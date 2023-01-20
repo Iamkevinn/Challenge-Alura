@@ -95,3 +95,71 @@ function Copiar(){
     document.execCommand("copy");
     alert("Copiado con exito!");
 }
+let comprobarmodo = false;
+let colorfuente = document.querySelector('#mensaje1');
+function Mode(){
+    if(comprobarmodo == false){
+        document.querySelector('.Page').classList.add('DarkMode');
+        document.querySelector('.rectangulo').classList.add('DarkMode-rectangulo');
+
+        colorfuente = document.querySelector('#mensaje1');
+        colorfuente.style.color ="white";  
+        colorfuente = document.querySelector('#mensaje2');
+        colorfuente.style.color ="#a6b7cb";
+
+        document.querySelector('.InputTexto').classList.add('DarkMode-Objects');
+
+        colorfuente = document.querySelector('#Mensajepc');
+        colorfuente.style.color ="#a6b7cb";
+
+        document.querySelector('.Desencriptar').classList.add('DarkMode-Botones');
+        document.querySelector('.Encriptar').classList.add('DarkMode-Botones2');
+
+        colorfuente = document.querySelector('.advertenciadiv');
+        colorfuente.style.color = "#b0ccf1";
+
+        colorfuente = document.querySelector('.IconoSun');
+        colorfuente.style.display = "none";
+        colorfuente = document.querySelector('.IconoMoon');
+        colorfuente.style.display = "inline-block";
+
+        colorfuente = document.querySelector('.BotonCambio');
+        
+        colorfuente = document.querySelector('#Copiar');
+        colorfuente.style.color = "#b0ccf1";
+        colorfuente.style.border = "1px solid #a6b7cb";
+        
+        comprobarmodo = true;
+    } else if(comprobarmodo == true){
+        document.querySelector('.Page').classList.remove('DarkMode');
+        document.querySelector('.rectangulo').classList.remove('DarkMode-rectangulo');
+
+        document.querySelector('.InputTexto').classList.remove('DarkMode-Objects');
+
+        colorfuente = document.querySelector('.advertenciadiv');
+        colorfuente.style.color = "#495057";
+
+        document.querySelector('.Desencriptar').classList.remove('DarkMode-Botones');
+        document.querySelector('.Encriptar').classList.remove('DarkMode-Botones2');
+
+        colorfuente = document.querySelector('#Mensajepc');
+        colorfuente.style.color ="#0a3871";
+
+        colorfuente = document.querySelector('#Copiar');
+        colorfuente.style.color = "#0f4281";
+        colorfuente.style.border = "1px solid #0A3871";
+
+        colorfuente = document.querySelector('.IconoMoon');
+        colorfuente.style.display = "none";
+        colorfuente = document.querySelector('.IconoSun');
+        colorfuente.style.display = "inline-block";
+
+        colorfuente = document.querySelector('#mensaje1');
+        colorfuente.style.color ="#343A40";  
+        colorfuente = document.querySelector('#mensaje2');
+        colorfuente.style.color ="#495057";
+
+        comprobarmodo = false;
+    }
+    
+}
